@@ -4,14 +4,14 @@ using System.Linq;
 using System.Linq.Dynamic.Core;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-//using System.Linq.Dynamic.Core;
+
 
 namespace StoreApplicationDL
 {
-    class StoreApplicationDL<T> : IDatabase<T> where T : class
+    public class StoreApplicationDB<T> : IDatabase<T> where T : class
     {
         private readonly StoreApplicationDbContext _context;
-        public StoreApplicationDL(StoreApplicationDbContext p_context)
+        public StoreApplicationDB(StoreApplicationDbContext p_context)
         {
             _context = p_context;
         }
