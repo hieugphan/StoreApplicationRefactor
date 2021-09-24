@@ -1,4 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\StoreApplicationEntities\StoreApplicationEntities.csproj" />
+    <ProjectReference Include="..\StoreApplicationDL\StoreApplicationDL.csproj" />
+  </ItemGroup>
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
