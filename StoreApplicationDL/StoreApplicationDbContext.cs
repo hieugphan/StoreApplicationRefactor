@@ -21,10 +21,10 @@ namespace StoreApplicationDL
         {
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder p_options)
-        {
-            p_options.UseNpgsql(@"Server=chunee.db.elephantsql.com;database=bnriaivc;UserID=bnriaivc;Password=1aO2hKJT8svJEwwp3WeY4SG86RjU1xdh");
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder p_options)
+        //{
+        //    p_options.UseNpgsql(@"Server=chunee.db.elephantsql.com;database=bnriaivc;UserID=bnriaivc;Password=1aO2hKJT8svJEwwp3WeY4SG86RjU1xdh");
+        //}
 
         protected override void OnModelCreating(ModelBuilder p_modelBuilder)
         {
