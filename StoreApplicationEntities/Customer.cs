@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -24,8 +25,9 @@ namespace StoreApplicationEntities
         {
         }
 
+        [Key]
         public int Id { get => _id; set => _id = value; }
-
+        [Required]
         public string Email
         {
             get
